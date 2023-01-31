@@ -1,0 +1,14 @@
+<%= turbo_stream_from :rooms %>
+
+<%= turbo_frame_tag :rooms, class: "mx-4" do %>
+  <%= render @rooms %>
+<% end %>
+
+<% if user_signed_in? %>
+  <%= form_with model: @new_room, class: "mt-4" do |f| %>
+    <%= f.text_field :title, autofocus: true, required: true, class: "appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm", placeholder: "Room name" %>
+
+
+    <%= f.submit "New room", class: "group relative flex w-32 justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer mt-4" %>
+  <% end %>
+<% end %>
