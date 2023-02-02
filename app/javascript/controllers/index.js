@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import ChatRefreshController from "./chat_refresh_controller"
 application.register("chat_refresh", ChatRefreshController)
+
+import FlashController from "./flash_controller"
+application.register("flash", FlashController)

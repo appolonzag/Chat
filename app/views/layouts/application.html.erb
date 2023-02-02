@@ -21,6 +21,7 @@
                   <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
                 </a>
               </div>
+
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4"> 
                   <% if user_signed_in? %>
@@ -54,10 +55,10 @@
           <h1 class="text-3xl font-bold tracking-tight text-gray-900">Chat</h1>
         </div>
       </header>
-      <main>
-        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-          <%= yield %>
-        </div>
+
+      <main class="mx-auto max-w-7xl w-full flex flex-col justify-center align-center py-6 sm:px-6 lg:px-8">
+        <%= render partial: "shared/flash" %>
+        <%= yield %>
       </main>
     </div>
   </body>
