@@ -1,24 +1,16 @@
-# README
+# Chat
+## _With Hotwire and turbo_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Task
+###  Make online chat on Rails 7 with Hotwire - turbo
+- On the main page, a list of created chats;
+- Any user has the right to create a chat and specify a name;
+- Any user has the right to enter the chat and read the correspondence;
+- Any user has the right to send a message;
+- After sending, the message appears to everyone in the room;
+- After sending a message, a notification appears with the name of the room and the body of the message.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### For start
+```sh
+run bin/dev
+```
