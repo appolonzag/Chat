@@ -10,7 +10,7 @@
 - After sending, the message appears to everyone in the room;
 - After sending a message, a notification appears with the name of the room and the body of the message.
 
-### For start
+## For start
 ```sh
 run bin/dev
 ```
